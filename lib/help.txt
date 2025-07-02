@@ -1,8 +1,19 @@
 Usage: treeclip [--exclude=folder1,folder2,...] [--help|-h]
 
 Options:
-  --exclude=folders  Comma-separated list of folder names to collapse (default: node_modules,.next,.git)
-  --help, -h         Show this help message and exit
+  --exclude=folders   Comma-separated list of folder names to collapse (overrides .treeignore and defaults)
+  --help, -h          Show this help message and exit
+
+Ignore list:
+  - If a file named .treeignore exists in the current directory, its non-comment lines will be used as the exclude list (one per line).
+  - If neither --exclude nor .treeignore are provided, the default is: node_modules, .next, .git
 
 Example:
   treeclip --exclude=node_modules,.git,.cache
+
+You can also create a .treeignore file like this:
+  node_modules
+  .git
+  .next
+  dist
+  .vscode

@@ -2,7 +2,7 @@
 // index.js
 
 import { buildTree } from "./lib/buildTree.js";
-import { parseExcludeArg, shouldShowHelp } from "./lib/cli.js";
+import { getExcludeList, shouldShowHelp } from "./lib/cli.js";
 import clipboardy from "clipboardy";
 
 import fs from "fs";
@@ -25,7 +25,7 @@ async function main() {
   }
 
   try {
-    const exclude = parseExcludeArg();
+    const exclude = getExcludeList();
     const rootDir = process.cwd();
     const rootFolderName = path.basename(rootDir);
     let tree = `${rootFolderName}/\n`;

@@ -1,16 +1,16 @@
-# tree-clipboard
+# treeclip
 
 > 📋 Copy your project directory structure as an ASCII tree directly to your clipboard!
 
-**tree-clipboard** is a simple command-line tool to generate and copy an ASCII representation of your project's folder structure.
-It lets you exclude folders (e.g. `node_modules`) and works on Windows, macOS, and Linux.
+**treeclip** is a simple command-line tool to generate and copy an ASCII representation of your project's folder structure.
+You can exclude folders (e.g. `node_modules`) and it works on Windows, macOS, and Linux.
 
 ---
 
 ## Installation
 
 ```sh
-npm install -g tree-clipboard
+npm install -g treeclip
 ```
 
 ---
@@ -23,10 +23,29 @@ treeclip [--exclude=folder1,folder2,...] [--help|-h]
 
 ### Options
 
-| Option            | Description                                                                              |
-| ----------------- | ---------------------------------------------------------------------------------------- |
-| --exclude=folders | Comma-separated list of folder names to collapse.<br>(default: node\_modules,.next,.git) |
-| --help, -h        | Show help and exit                                                                       |
+| Option              | Description                                                                             |
+| ------------------- | --------------------------------------------------------------------------------------- |
+| `--exclude=folders` | Comma-separated list of folder names to collapse (overrides `.treeignore` and defaults) |
+| `--help`, `-h`      | Show help and exit                                                                      |
+
+---
+
+### Ignore list (custom exclude)
+
+* If a file named `.treeignore` exists in the current directory, its non-comment lines (one per line) will be used as the exclude list.
+* If neither `--exclude` nor `.treeignore` are provided, the default is: `node_modules`, `.next`, `.git`.
+
+**Example `.treeignore` file:**
+
+```
+node_modules
+.git
+.next
+dist
+.vscode
+```
+
+---
 
 ### Example
 
@@ -53,17 +72,11 @@ my-project/
 
 * **Easy to use:** Just run `treeclip` in any directory.
 * **Clipboard ready:** Output is automatically copied.
-* **Customizable:** Exclude any folders you want from tree expansion.
+* **Customizable:** Exclude any folders you want from tree expansion (via CLI or `.treeignore`).
 * **Fast & lightweight:** Zero config needed.
-
----
-
-## License
-
-MIT
 
 ---
 
 ## Author
 
-[Niccolò Terzaghi](https://github.com/your-username)
+[Niccolò Terzaghi](https://github.com/NiccoloTerzaghi)

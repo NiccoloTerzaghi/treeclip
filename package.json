@@ -15,10 +15,10 @@
     "cli",
     "tool"
   ],
-  "author": "Your Name <your@email.com> (https://github.com/your-username)",
+  "author": "Niccolò Terzaghi <ni.terzaghi@gmail.com> (https://github.com/NiccoloTerzaghi)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/tree-clipboard.git"
+    "url": "https://github.com/NiccoloTerzaghi/treeclip"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
