@@ -10,7 +10,7 @@ You can exclude folders (e.g. `node_modules`) and it works on Windows, macOS, an
 ## Installation
 
 ```sh
-npm install -g treeclip
+npm install -g treeclip-cli
 ```
 
 ---

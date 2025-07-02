@@ -1,5 +1,5 @@
 {
-  "name": "tree-clipboard",
+  "name": "treeclip-cli",
   "version": "1.0.0",
   "description": "CLI to copy your project folder structure as an ASCII tree to your clipboard",
   "main": "index.js",
