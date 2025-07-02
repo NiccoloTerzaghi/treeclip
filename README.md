@@ -33,7 +33,7 @@ treeclip [--exclude=folder1,folder2,...] [--help|-h]
 ### Ignore list (custom exclude)
 
 * If a file named `.treeignore` exists in the current directory, its non-comment lines (one per line) will be used as the exclude list.
-* If neither `--exclude` nor `.treeignore` are provided, the default is: `node_modules`, `.next`, `.git`.
+* If neither `--exclude` nor `.treeignore` are provided, the default is: `node_modules`, `.git`.
 
 **Example `.treeignore` file:**
 

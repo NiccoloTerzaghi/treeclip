@@ -6,7 +6,7 @@ Options:
 
 Ignore list:
   - If a file named .treeignore exists in the current directory, its non-comment lines will be used as the exclude list (one per line).
-  - If neither --exclude nor .treeignore are provided, the default is: node_modules, .next, .git
+  - If neither --exclude nor .treeignore are provided, the default is: node_modules, .git
 
 Example:
   treeclip --exclude=node_modules,.git,.cache
