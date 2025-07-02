@@ -1,0 +1,8 @@
+Usage: treeclip [--exclude=folder1,folder2,...] [--help|-h]
+
+Options:
+  --exclude=folders  Comma-separated list of folder names to collapse (default: node_modules,.next,.git)
+  --help, -h         Show this help message and exit
+
+Example:
+  treeclip --exclude=node_modules,.git,.cache
