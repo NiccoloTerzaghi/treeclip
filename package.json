@@ -16,7 +16,6 @@
     "tool"
   ],
   "author": "Your Name <your@email.com> (https://github.com/your-username)",
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/your-username/tree-clipboard.git"
