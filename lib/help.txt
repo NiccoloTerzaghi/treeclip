@@ -4,9 +4,10 @@ Options:
   --exclude=folders   Comma-separated list of folder names to collapse (overrides .treeclipignore and defaults)
   --help, -h          Show this help message and exit
 
-Ignore list:
-  - If a file named .treeclipignore exists in the current directory, its non-comment lines will be used as the exclude list (one per line).
-  - If neither --exclude nor .treeclipignore are provided, the default is: node_modules, .git
+Exclude list priority:
+  1. --exclude        If provided, uses only these folders.
+  2. .treeclipignore  If present, uses its non-comment lines (one per line).
+  3. Defaults         Otherwise, uses a built-in list of common folders to exclude (see lib/default-exclude.js).
 
 Example:
   treeclip --exclude=node_modules,.git,.cache
